@@ -1,0 +1,123 @@
+.footer-nav{
+    &__main{
+        display: flex;
+        justify-content: start;
+        margin-bottom: 33rem;
+        @include desktop-xs{
+            justify-content: center;
+        }
+    }
+    &__info{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+
+        @include desktop-xs{
+            grid-template-columns: auto auto auto;
+            gap: 30rem 78rem;
+        }
+        @include mobile{
+            grid-template-columns: auto auto;
+            gap: 40rem 78rem;
+        }
+        @include mobile-s{
+            grid-template-columns: auto;
+        }
+    }
+    &__content{
+        padding-right: 153rem;
+        @include desktop-xs{
+            padding-right: 0;
+        }
+    }
+    &__logo{
+        display: flex;
+        justify-content: start;
+        gap: 8rem;
+        align-items: center;
+        margin-bottom: 15rem;
+    }
+    &__logo-title{
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 20rem;
+        color: var(--title-color);
+    }
+
+    &__main-information{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        margin-bottom: 15rem;
+    }
+    &__information{
+        display: flex;
+        justify-content: start;
+        gap: 7rem;
+        align-items: center;
+        transition: .2s all ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            color: var(--hover-color); 
+        }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 200%;
+    }
+    &__socials{
+        display: flex;
+        justify-content: start;
+        gap: 15rem;
+    }
+
+    &__services{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__services-title, &__services-link{
+        font-weight: 500;
+        font-size: 18rem;
+        line-height: 222%;
+        letter-spacing: 0.01em;
+        color: var(--footer-links-color);
+    }
+    &__services-link{
+        font-weight: 400;
+        transition: .2s all ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            color: var(--hover-color); 
+        }
+    }
+}
+.service{
+    padding-right: 42rem;
+    @include desktop-xs{
+        padding-right: 0;
+    }
+}
+.company{
+    padding-right: 97rem;
+    @include desktop-xs{
+        padding-right: 0;
+    }
+}
+.supports{
+    padding-right: 98rem;
+    @include desktop-xs{
+        padding-right: 0;
+    }
+}
+.footer-social{
+    transition: .2s all ease-in-out;
+
+    &:hover{
+        transform: scale(1.2);
+        color: var(--hover-color); 
+    }
+}

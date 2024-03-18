@@ -1,0 +1,33 @@
+// breakpoints
+$desktop-small: 1200px;
+$desktop-xs: 1100px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-s: 400px;
+
+
+:root {
+	--font-family: "DM Sans", sans-serif;
+	--second-family: "Rubik", sans-serif;
+	--third-family: "Roboto", sans-serif;
+
+
+	--transition: .2s all ease-in-out;
+
+	--c-primary: rgb(35, 43, 61);
+	--content-background: rgb(23, 30, 45);
+	--c-text-currentColor: #fff;
+	--c-border: #eee;
+	--title-color: #fff;
+	--links-color: #f9fafb;
+	--button-color: linear-gradient(88deg, #2563eb 0%, #d946ef 100%);
+	--footer-links-color: rgba(255, 255, 255, 0.8);
+	--hover-color: rgb(163, 73, 163);
+	--contact-background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+	--subscribe-background: #292f3c;
+	--input-color: #6c6c6c;
+
+
+
+}

@@ -1,0 +1,93 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 43rem;
+
+	&__logo{
+		display: flex;
+		justify-content: space-between;
+		gap: 5rem;
+		align-items: center;
+	}
+
+	&__title{
+		font-family: var(--second-family);
+		font-weight: 500;
+		font-size: 20rem;
+		color: var(--title-color);
+	}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 60rem;
+
+		@include tablet {
+			z-index: 2;
+			position: fixed;
+			width: 70%;
+			height: 100%;
+			flex-direction: column;
+			left: 0;
+			top: 0;
+			background: var(--c-primary);
+			align-items: center;
+			justify-content: center;
+			transform: translateX(-120%);
+			transition: var(--transition);
+		}
+
+		&._active {
+			transform: translateX(0);
+		}
+
+
+
+		.icon-close {
+			position: absolute;
+			top: 40rem;
+			right: 40rem;
+			color: var(--c-text-currentColor);
+		}
+	}
+	&__li{
+		transition: .2s all ease-in-out;
+		&:hover{
+			transform: scale(1.2);
+		}
+	}
+
+	&__a {
+		font-weight: 500;
+		font-size: 14rem;
+		color: var(--links-color);
+		transition: .2s all ease-in-out;
+		&:hover{ 
+		color: var(--hover-color);
+	}
+
+		@include tablet {
+			font-size: 25rem;
+			color: var(--c-text-currentColor);
+		}
+	}
+
+	&__contact{
+		border-radius: 5rem;
+		padding: 12rem 28rem;
+		background: var(--contact-background);
+		text-align: center;
+		
+	}
+}
+
+.icon-menu,
+.icon-close {
+	cursor: pointer;
+	display: none;
+
+	@include tablet {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,53 @@
+.footer {
+	&-policy {
+		padding-top: 36rem;
+		padding-bottom: 36rem;
+		border-top: 1rem solid rgba(150, 150, 150, 0.2);
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 14rem;
+		line-height: 100%;
+		color: var(--footer-links-color);
+
+		&__container {
+			display: flex;
+			align-items: center;
+
+			@include tablet {
+				flex-direction: column;
+				gap: 50rem;
+			}
+		}
+
+		&__copy {
+			margin-right: auto;
+
+			@include tablet {
+				margin-right: initial;
+			}
+		}
+
+		&__link {
+			margin-right: 53rem;
+			color: var(--footer-links-color);
+			transition: .2s all ease-in-out;
+
+			&:hover{
+				transform: scale(1.2);
+				color: var(--hover-color); 
+			}
+
+			@include tablet {
+				margin-right: initial;
+			}
+
+			&:last-child {
+				margin-right: 39rem;
+
+				@include tablet {
+					margin-right: initial;
+				}
+			}
+		}
+	}
+}

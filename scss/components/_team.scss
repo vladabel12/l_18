@@ -1,0 +1,90 @@
+.team{
+    padding: 0 20rem;
+    flex-direction: column;
+    margin-bottom: 120rem;
+    &__title{
+        font-weight: 700;
+        font-size: 42rem;
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: 30rem;
+    }
+
+    &__description{
+        max-width: 480rem;
+        margin-inline: auto;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 162%;
+        text-align: center;
+        color: var(--title-color);
+        margin-bottom: 40rem;
+    }
+    &__main{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__info{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 30rem;
+
+        @include tablet-small{
+            grid-template-columns: auto auto;
+        }
+        @include mobile{
+            grid-template-columns: auto;
+        }
+    }
+
+    &__content{
+        padding: 32rem 0 35rem 0;
+        width: 270rem;
+        border-radius: 34rem;
+        box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
+        background: var(--content-background);
+        border: 1px solid #292f3c;
+    }
+
+    &__img{
+        margin-inline: auto;
+        max-width: 90rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__name{
+        margin-top: 11rem;
+        font-weight: 500;
+        font-size: 28rem;
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+    &__profession{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16rem;
+        letter-spacing: 0.03em;
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: 11rem;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: center;
+        gap: 12rem;
+    }
+}
+.skype, .linkedin, .twitter, .facebook{
+    transition: .2s all ease-in-out;
+
+	&:hover{
+		transform: scale(1.2); 
+	}
+}
